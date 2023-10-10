@@ -1,0 +1,104 @@
+@media (min-width: 381px) and (max-width: 425px)  {
+
+    .container {
+        width: 500px;
+        overflow: hidden;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .line {
+        border-bottom: 2px solid #ffffff;
+        position: absolute;
+        width: 65%;
+        top: 22.5px;
+        z-index: -1;
+        left: 20%;
+    }
+
+    .title h1 {
+        font-size: 20px;
+    }
+
+    .descricao {
+        font-size: 13px;
+    }
+
+    .title::after {
+        content: "";
+        border-bottom: 3px solid #F99417;
+        left: 30px;
+        width: 75px;
+        height: 3px;
+        position: absolute;
+    }
+
+    #btn {
+        text-align: center;
+        float: none;
+    }
+
+    .btn {
+        width: 310px;
+    }
+
+    .form-container input {
+        width: 100%;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 767px)   {
+    .container {
+        width: 400px;
+        overflow: hidden;
+    }
+    
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .line {
+        border-bottom: 2px solid #ffffff;
+        position: absolute;
+        width: 65%;
+        top: 22.5px;
+        z-index: -1;
+        left: 20%;
+    }
+
+    .title h1 {
+        font-size: 20px;
+    }
+
+    .descricao {
+        font-size: 13px;
+    }
+
+    .title::after {
+        content: "";
+        border-bottom: 3px solid #F99417;
+        left: 30px;
+        width: 75px;
+        height: 3px;
+        position: absolute;
+    }
+
+    #btn {
+        text-align: center;
+        float: none;
+    }
+
+    .btn {
+        width: 310px;
+    }
+
+    .form-container input {
+        width: 100%;
+    }
+
+
+}
