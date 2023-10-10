@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Compra</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+         <div class="etapas-container">
+            <div class="line"></div>
+            <div class="etapa">
+                <i class="fa-solid fa-user active"></i>
+                <p class="descricao">Criação de conta</p>
+            </div>
+            <div class="etapa">
+                <i class="fa-solid fa-location-dot active"></i>
+                <p class="descricao">Endereço</p>
+            </div>
+            <div class="etapa">
+                <i class="fa-solid fa-credit-card"></i>
+                <p class="descricao">Pagamento</p>
+            </div>
+        </div>
+
+        <div class="title">
+            <h1>Me diga seu endereço:</h1>
+        </div>
+        <form class="form-container" id="form">
+            <div class="input-cep">
+                <input
+                type="number"
+                id="cep"
+                placeholder="Digite o seu Cep"
+                required
+                minlength="8"
+                maxlength="8"
+                class="required"
+                oninput="cepValidate()"
+                />
+                <span  class="span-required">O CEP deve ter 8 caracteres</span>
+            </div>
+            <div class="form">
+                <div class="form-card">
+                    <input
+                    type="text"
+                    id="endereco"
+                    placeholder="Endereço"
+                    required
+                    />
+                </div>
+                <div class="form-card">
+                    <input
+                    type="text"
+                    id="bairro"
+                    placeholder="Bairro"
+                    required
+                    />
+                </div>
+            </div>
+
+            <div class="form">
+                <div class="form-card">
+                    <input
+                    type="text"
+                    id="estado"
+                    placeholder="Estado"
+                    required
+                    />
+                </div>
+                <div class="form-card">
+                    <input
+                    type="text"
+                    id="cidade"
+                    placeholder="Cidade"
+                    required
+                    />
+                </div>
+            </div>
+            <div class="input-number">
+                <input
+                type="text"
+                id="numero"
+                placeholder="Número"
+                required
+                class="required"
+                oninput="validateNumero()"
+                />
+                <span class="span-required">Campo obrigatório</span>
+            </div>
+        </form>
+        <div id="btn">
+            <button class="btn">Ir para pagamento</button>
+        </div>
+    </main>
+
+    <script src="script.js" defer></script>
+    <script src="validacao.js" defer></script>
+  </body>
+</html>
