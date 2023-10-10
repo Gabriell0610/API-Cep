@@ -52,8 +52,10 @@ inputCep.addEventListener('keyup', (e) => {
     }
 })
 
-number.addEventListener('focusout', (e) =>  {
-    numberValidate()
+
+inputCep.addEventListener('focusout', (e) => {
+    const cep = inputCep.value
+    showCep(cep)
 })
 
 
