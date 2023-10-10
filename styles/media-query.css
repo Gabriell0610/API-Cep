@@ -1,3 +1,72 @@
+@media (min-width: 320px) and (max-width: 380px) {
+    .container {
+        width: 400px;
+        padding: 0 30px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-card input {
+        width: 250px;
+    }
+
+    .line {
+        border-bottom: 2px solid #ffffff;
+        position: absolute;
+        width: 65%;
+        top: 18.5px;
+        z-index: -1;
+        left: 20%;
+    }
+
+    .title h1 {
+        font-size: 18px;
+    }
+
+    #btn {
+        text-align: center;
+        float: none;
+    }
+
+    .btn {
+        width: 250px;
+    }
+
+    .descricao {
+        font-size: 11px;
+    }
+
+    .etapa i {
+        background-color: #8b8b8b;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        border-radius: 50%;
+        margin-bottom: .6rem;
+        color: #F5F5F5;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .title::after {
+        content: "";
+        border-bottom: 3px solid #F99417;
+        left: 30px;
+        width: 67px;
+        height: 3px;
+        position: absolute;
+    }
+
+    .form-container input {
+        width: 100%;
+    }
+}
+
+
+
 @media (min-width: 381px) and (max-width: 425px)  {
 
     .container {
