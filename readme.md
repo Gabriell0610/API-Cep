@@ -13,6 +13,7 @@ Projeto feito para estudo de Funções assíncronas, fetch, API, Javascript, Htm
 
 ### Acesse o projeto pelo link abaixo: 
 
+<a href="https://gabriell0610.github.io/API-Cep/">Projeto</a>
 
 
 

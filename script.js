@@ -53,7 +53,7 @@ inputCep.addEventListener('keyup', (e) => {
 })
 
 
-inputCep.addEventListener('focusout', (e) => {
+inputCep.addEventListener('focusout', () => {
     const cep = inputCep.value
     showCep(cep)
 })
