@@ -9,7 +9,7 @@ Projeto feito para estudo de Funções assíncronas, fetch, API, Javascript, Htm
 <hr>
 
 ## Design 🎨
-![Alt text](image.png)
+![Alt text](image-1.png)
 
 ### Acesse o projeto pelo link abaixo: 
 
