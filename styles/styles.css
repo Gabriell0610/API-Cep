@@ -16,8 +16,8 @@ body{
 .container {
     width: 700px;
     border-radius: 4px;
-    border: 5px solid #ffffff;
-    background-color: #363062;
+    border: 5px solid var(--white);
+    background-color: var(--bg-color);
 }
 
 
@@ -39,28 +39,28 @@ body{
 }
 
 .etapa i {
-    background-color: #8b8b8b;
+    background-color: var(--gray-dark);
     width: 45px;
     height: 45px;
     line-height: 45px;
     border-radius: 50%;
     margin-bottom: .6rem;
-    color: #F5F5F5;
+    color: var(--white);
     text-align: center;
 }
 
 .etapa .active {
-    background-color: #F99417;
+    background-color: var(--yellow);
 }
 
 .descricao {
     font-size: 16px;
-    color: #F5F5F5;
+    color: var(--white-dark);
     font-weight: 300;
 }
 
 .line {
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid var(--white);
     position: absolute;
     width: 80%;
     top: 22.5px;
@@ -71,13 +71,13 @@ body{
 .title {
     margin-top: 2rem;
     padding: 0 30px;
-    color: #fff;
+    color: var(--white-dark);
     position: relative;
 }
 
 .title::after {
     content: "";
-    border-bottom: 3px solid #F99417;
+    border-bottom: 3px solid var(--yellow);
     left: 30px;
     width: 120px;
     height: 3px;
@@ -93,21 +93,21 @@ body{
 .form-container input {
     padding: 10px 20px;
     width: 100%;
-    border: 1px solid #ccc;
+    border: 1px solid var(--gray);
     border-radius: 5px;
-    background-color: #363062;
-    color: #fff;
+    background-color: var(--bg-color);
+    color: var(--white);
     
 }
 
 .form-container input:focus {
     outline: none;
-    border: 1px solid #F99417;
+    border: 1px solid var(--yellow);
 }
 
 .form-container input::placeholder {
     font-size: 14px;
-    color: #F99417;
+    color: var(--yellow);
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -123,7 +123,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .form-card input {
-    width: 309px;
+    width: 305px;
 }
 
 .span-required {
@@ -141,10 +141,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 .btn {
     padding: 10px 25px;
-    border: 2px solid #fff;
+    border: 2px solid var(--white);
     border-radius: 5px;
-    color: #fff;
-    background-color: #F99417;
+    color: var(--white);
+    background-color: var(--yellow);
     font-size: 15px;
     font-weight: 600;
     transition: color 0.4s;
