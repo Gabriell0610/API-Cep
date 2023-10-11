@@ -10,14 +10,18 @@ const elementEstado = document.getElementById('estado');
 
 
 
+
 //Funções
+
+
 const getApi = async (cep) => {
     limparFormulario()
     const apiURL = `https://viacep.com.br/ws/${cep}/json/`
-    const response = await fetch(apiURL)
-    const data = await response.json()
 
-    return data
+        const response = await fetch(apiURL)
+        const data = await response.json()
+    
+        return data
 }
 
 
@@ -27,7 +31,7 @@ const showCep = async (cep) => {
     if(data.hasOwnProperty('erro')) {
 
         inputCep.value = "Endereço não encontrado"
-    }else {
+    } else {
         elementEndereco.value = data.logradouro;
         elementBairro.value = data.bairro;
         elementCidade.value = data.localidade;
